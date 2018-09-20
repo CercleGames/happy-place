@@ -97,13 +97,13 @@ MonoBehaviour:
       logMin: -8
       logMax: 4
   bloom:
-    m_Enabled: 1
+    m_Enabled: 0
     m_Settings:
       bloom:
-        intensity: 0.5
-        threshold: 1.1
+        intensity: 1
+        threshold: 1
         softKnee: 0.5
-        radius: 4
+        radius: 2.51
         antiFlicker: 0
       lensDirt:
         texture: {fileID: 0}
@@ -120,12 +120,12 @@ MonoBehaviour:
         neutralWhiteLevel: 5.3
         neutralWhiteClip: 10
       basic:
-        postExposure: 0.5
-        temperature: 0
+        postExposure: 0.45
+        temperature: 3
         tint: 0
         hueShift: 0
-        saturation: 1.35
-        contrast: 1
+        saturation: 1.39
+        contrast: 1.36
       channelMixer:
         red: {x: 1, y: 0, z: 0}
         green: {x: 0, y: 1, z: 0}
@@ -317,7 +317,7 @@ MonoBehaviour:
       size: 1
       luminanceContribution: 0.8
   vignette:
-    m_Enabled: 1
+    m_Enabled: 0
     m_Settings:
       mode: 0
       color: {r: 0, g: 0, b: 0, a: 1}
