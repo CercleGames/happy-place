@@ -16,7 +16,11 @@ public class VaseSpawn : MonoBehaviour {
  public   void Spawn()
     {
         GameObject clone = Instantiate(vase, transform.position, Quaternion.identity) as GameObject;
-        clone.GetComponentInChildren<Rigidbody>().AddForce(transform.forward * vaseForce);
+        Rigidbody rb = clone.GetComponentInChildren<Rigidbody>();
+
+        rb.AddForce(transform.forward * vaseForce);
+        rb.AddTorque(Random.Range(-20,20), Random.Range(-20, 20), Random.Range(-20, 20));
+
         // Destroy(clone, 3);
     }
 
