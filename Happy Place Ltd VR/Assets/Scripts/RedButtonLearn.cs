@@ -1,30 +1,26 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using VRTK.Controllables;
 
 public class RedButtonLearn : MonoBehaviour {
 
-    bool isGreen = false;
+   
+    public VRTK_BaseControllable pusher;
 
-    public Renderer rend;
+    public VaseSpawn vaseSpawn;
 
-    private void Start()
+    private void Update()
     {
-        rend = GetComponent<Renderer>();
-    }
-
-    private void OnCollisionEnter(Collision collision)
-    {
-        isGreen = !isGreen;
-
-        if(isGreen)
-        rend.material.color = Color.green;
-        else
+        if (pusher.AtMaxLimit())
         {
-            rend.material.color = Color.red;
+            print("button pushed");
+            vaseSpawn.Spawn();
+
         }
     }
+
+
 
 
 
