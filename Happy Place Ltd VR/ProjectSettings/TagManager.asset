@@ -13,6 +13,7 @@ TagManager:
   - Torso
   - Head
   - bat
+  - FlappyBird2DObstacle
   layers:
   - Default
   - TransparentFX

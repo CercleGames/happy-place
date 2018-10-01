@@ -4,29 +4,38 @@ using UnityEngine;
 
 public class AiShellScript : MonoBehaviour {
 
-    public float moveSpeed = 15f;
+    Rigidbody rb;
+    Vector3 lastPos;
 
-    
+   public float tiltAmount = 25;
 
-	
-	
-	// Update is called once per frame
-	void Update () {
-
-
-        float xAxis = Input.GetAxis("Horizontal");
-        float yAxis = Input.GetAxis("Vertical");
+    private void Start()
+    {
+        rb = GetComponentInParent<Rigidbody>();
+        lastPos = transform.position;
+    }
 
 
-      //  transform.Translate(xAxis * moveSpeed * Time.deltaTime, 0, yAxis * moveSpeed * Time.deltaTime, Space.World);
+
+    // Update is called once per frame
+    void Update () {
+
+        Vector3 currentPos = transform.position - lastPos;
+
+        float xAxis = currentPos.x;
+        float yAxis = currentPos.z;
+        print(currentPos);
+
+
+      
 
 
         Vector3 euler = transform.localEulerAngles;
 
        
 
-        float xRot = Mathf.Clamp(yAxis * 15, -25, 25);
-        float zRot = Mathf.Clamp(xAxis * 15, -25, 25) * -1;
+        float xRot = Mathf.Clamp(yAxis * tiltAmount, -25, 25);
+        float zRot = Mathf.Clamp(xAxis * tiltAmount, -25, 25) * -1;
 
 
 
@@ -36,6 +45,6 @@ public class AiShellScript : MonoBehaviour {
         
         transform.localEulerAngles = euler;
 
-
+        lastPos = transform.position;
 	}
 }

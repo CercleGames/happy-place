@@ -4,14 +4,57 @@ ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
     100000: //RootNode
+    100002: Cube
+    100004: Cube_001
+    100006: Cube_002
+    100008: Cube_003
     400000: //RootNode
+    400002: Cube
+    400004: Cube_001
+    400006: Cube_002
+    400008: Cube_003
     2100000: bopO__bopO
+    2100002: BopoProfessor__bopO
+    2100004: BopOoss__bopO
+    2100006: bopOBetFriend__bopO
+    2100008: BopoDoctor__bopO
     2300000: //RootNode
+    2300002: Cube
+    2300004: Cube_001
+    2300006: Cube_002
+    2300008: Cube_003
     3300000: //RootNode
+    3300002: Cube
+    3300004: Cube_001
+    3300006: Cube_002
+    3300008: Cube_003
     4300000: Cube
+    4300002: Cube_003
+    4300004: Cube_002
+    4300006: Cube_001
     7400000: Default Take
     9500000: //RootNode
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: BopOoss__bopO
+    second: {fileID: 2100000, guid: 49716a1fa14d40e45a036f1a952bf624, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: BopoDoctor__bopO
+    second: {fileID: 2100000, guid: 9d0539450c6e69147aaa74771ed56deb, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: BopoProfessor__bopO
+    second: {fileID: 2100000, guid: 357e1a5a1b8fb044e85bf9d08a9c6f6b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: bopOBetFriend__bopO
+    second: {fileID: 2100000, guid: 66031b2dbab13534fa2ad240bdda3fc9, type: 2}
   materials:
     importMaterials: 1
     materialName: 0

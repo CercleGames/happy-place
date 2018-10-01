@@ -37,7 +37,32 @@ ModelImporter:
     4300008: Plane
     7400000: Default Take
     9500000: //RootNode
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: LoriBeak
+    second: {fileID: 2100000, guid: 35c220ef1b2f6a94f880fd6a2f89dc98, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: LoriBody
+    second: {fileID: 2100000, guid: 48111ca74dc2d69478425412d593b101, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Lori_Eye_Black
+    second: {fileID: 2100000, guid: c13c2de034fccaa48b17a97a4e672ffa, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Lori_Eye_White
+    second: {fileID: 2100000, guid: ce2cb39f3f5a45848a5ead19970da970, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Lori_Feet
+    second: {fileID: 2100000, guid: d4aa23b11c26a2c4ab007446f4787c5e, type: 2}
   materials:
     importMaterials: 1
     materialName: 0
